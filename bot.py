@@ -123,13 +123,12 @@ async def main():
                     start()
                     log.info("REPLIT detected opening webserver for recieve pinging")
                 try:
-                    await bot.start(os.environ["ALPHABET_TOKEN"])
+                    await bot.start(os.environ["TOKEN"])
                 except discord.errors.HTTPException:
                     log.exception("You likely got ratelimited or bot's token is wrong")
                 started = True  # break loop
     except KeyboardInterrupt:
         log.info("Exiting...")
-        await bot.db.close()
 
 
 if __name__ == "__main__":
