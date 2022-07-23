@@ -9,7 +9,7 @@ from discord.ext import commands
 from .utils import time
 
 sys.path.append("..")
-
+import config
 
 class Stuff(
     commands.Cog,
@@ -40,7 +40,7 @@ class Stuff(
         embed.add_field(name="Creator", value="[Unpredictable#9443] ")
         embed.add_field(
             name="The bot is also open-source!",
-            value="https://github.com/timelessnesses/level-bot",
+            value=config.git_repo,
         )
 
         await ctx.send(embed=embed)
