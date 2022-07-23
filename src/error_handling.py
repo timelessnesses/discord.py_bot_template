@@ -13,6 +13,7 @@ from discord.utils import MISSING
 sys.path.append("..")
 import config
 
+
 class Error_Handling(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
