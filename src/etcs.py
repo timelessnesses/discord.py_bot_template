@@ -11,6 +11,7 @@ from .utils import time
 sys.path.append("..")
 import config
 
+
 class Stuff(
     commands.Cog,
 ):
