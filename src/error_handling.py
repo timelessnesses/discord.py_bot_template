@@ -10,6 +10,8 @@ import discord
 from discord.ext import commands
 from discord.utils import MISSING
 
+sys.path.append("..")
+import config
 
 class Error_Handling(commands.Cog):
     def __init__(self, bot: commands.Bot):
@@ -122,7 +124,7 @@ class Error_Handling(commands.Cog):
                 )
                 .add_field(
                     name="Github commit number",
-                    value=f"[{self.revision_short_hash()}](https://github.com/timelessnesses/level-bot/commit/{self.revision_long_hash()})",
+                    value=f"[{self.revision_short_hash()}]({config.git_repo}/commit/{self.revision_long_hash()})",
                     inline=True,
                 ),
                 file=file,
