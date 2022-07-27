@@ -11,6 +11,7 @@ run `poetry install` to install basic packages that bot need to run it up
 - help command
 - error handling
 - automatic git remote url detector
+- hot reloading cog on save
 
 ## why this repo's license is MPL v2
 because i am actually using r.danny help cog with its utils function you could remove it and remove the license too
